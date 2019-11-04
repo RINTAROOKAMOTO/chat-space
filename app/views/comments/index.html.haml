@@ -1,0 +1,50 @@
+.flash_box
+.wrapper
+  .chat__side
+    .chat__side__header
+      .chat__side__header__name
+        %p seo
+      .chat__side__header__cog
+        = link_to do
+          %i.fa.fa-edit
+        = link_to do
+          %i.fa.fa-cog
+    .chat__side__groups
+      .chat__side__groups__name
+        %p sample
+      .chat__side__groups__comments
+        %p Good bye world!
+  .chat__main
+    .chat__main__header
+      .chat__main__header__name
+        %p sample
+      .chat__main__header__edit-button
+        = link_to "Edit", 'edit_group_path(params[:group_id])', method: :get
+      .chat__main__header__member
+        %p< Members: seo neko
+    .chat__main__comments
+      .chat__main__comments__1
+        .chat__main__comments__1__name
+          %p seo
+        .chat__main__comments__1__time
+          %p 2016/09/21
+        .chat__main__comments__1__comments
+          %p Hello world!
+          .chat__main__comments__1
+        .chat__main__comments__1__name
+          %p seo
+        .chat__main__comments__1__time
+          %p 2016/09/21
+        .chat__main__comments__1__comments
+          %p Hello world!
+    .chat__main__form
+      .chat__main__form__comments
+        .chat__main__form__comments__box
+          .chat__main__form__comments__box__text
+            %input#chat__main__form__comments__box__text{name: "comments[content]",placeholder: "type a comments", type: "text"}/
+        .chat__main__form__comments__box__image
+          %label
+            %input#chat__main__form__comments__box__image__file{name: "comments[image]",type: "file"}/
+            %i.fa.fa-image
+      .chat__main__form__input
+        %input{name: "botan",type: "submit",value: "Send"}/
