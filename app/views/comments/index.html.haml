@@ -1,7 +1,3 @@
--# !!!
--# %html
--#   %head
--#   %body
 .flash_box
 .wrapper
   .chat__side
@@ -45,10 +41,10 @@
       .chat__main__form__comments
         .chat__main__form__comments__box
           .chat__main__form__comments__box__text
-            %input#chat__main__form__comments__box__text{:name => "comments[content]", :placeholder => "type a comments", :type => "text"}/
+            %input#chat__main__form__comments__box__text{name: "comments[content]",placeholder: "type a comments", type: "text"}/
         .chat__main__form__comments__box__image
           %label
-            %input#chat__main__form__comments__box__image__file{:name => "comments[image]", :type => "file"}/
+            %input#chat__main__form__comments__box__image__file{name: "comments[image]",type: "file"}/
             %i.fa.fa-image
       .chat__main__form__input
-        %input{:name => "botan", :type => "submit", :value => "Send"}/
+        %input{name: "botan",type: "submit",value: "Send"}/
