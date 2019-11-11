@@ -39,8 +39,7 @@
 
 
 .chat__main{
-  width: calc(100vw - 300px);
-  float: right;
+  width: 100vw;
   &__header{
     height: 100px;
     display: flex;
@@ -49,13 +48,13 @@
     &__name{
       color: #333333;
       font-size: 20px;
-      padding-top: 35px;
+      line-height: 100px;
     }
     &__member{
       color: #999999;
       font-size: 12px;
       position: absolute;
-      top: 82px;
+      top: 80px;
     }
     &__edit-button{
       line-height: 40px;
