@@ -25,14 +25,18 @@
     overflow: scroll;
     background-color: #2f3e51;
     padding: 0 20px;
-    &__name{
-      font-size: 15px;
-      padding-top: 20px;
-      padding-bottom: 5px;
-    }
-    &__comments{
-      font-size: 11px;
-      padding-bottom: 20px;
+    &__group{
+      &__name{
+        font-size: 15px;
+        padding-top: 20px;
+        padding-bottom: 5px;
+        color: white;
+      }
+      &__comments{
+        font-size: 11px;
+        padding-bottom: 20px;
+        color: white;
+      }
     }
   }
 }
