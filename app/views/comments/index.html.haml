@@ -21,20 +21,7 @@
     .chat__main__header__member
       %p< Members: seo neko
   .chat__main__comments
-    .chat__main__comments__1
-      .chat__main__comments__1__name
-        %p seo
-      .chat__main__comments__1__time
-        %p 2016/09/21
-      .chat__main__comments__1__comments
-        %p Hello world!
-        .chat__main__comments__1
-      .chat__main__comments__1__name
-        %p seo
-      .chat__main__comments__1__time
-        %p 2016/09/21
-      .chat__main__comments__1__comments
-        %p Hello world!
+    = render @comment
   .chat__main__form
     .chat__main__form__comments
       .chat__main__form__comments__box

@@ -1,0 +1,11 @@
+.chat__main
+  .chat__main__comments__1
+    .chat__main__comments__1__name
+      = commnet.user.name
+    .chat__main__comments__1__time
+      = comment.created_at.strftime("%Y/%m/%d %H:%M")
+    .chat__main__comments__1__comments
+      - if commnet.content.present?
+        %p.lower-comment__content
+          = comment.content
+      = image_tag comment.image.url, class: 'lower-comment__image' if comment.image.present?
